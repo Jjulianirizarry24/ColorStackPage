@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ColorStack UPRM Chapter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #a8d5ba; /* Light green */
+      color: #1a1a1a;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-symbol {
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(to bottom, #fdb515 0%, #fdb515 33%, #fdb515 66%, #007a33 66%);
+      border-radius: 4px;
+    }
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: black;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #007a33;
+    }
+    .job-posting {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .calendar-container {
+      margin-top: 20px;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+    .calendar-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    footer {
+      background-color: #007a33;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    a {
+      color: #007a33;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-symbol"></div>
+      <div class="logo-text">ColorStack UPRM Chapter</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#jobs">Job Postings</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>Our mission:</strong> To increase the retention and success of Black and Latinx students in computing.</p>
+  </section>
+
+  <section id="jobs">
+    <h2>Job Postings</h2>
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC5IQbzkB1B7JyQ2EN4JEZpku4gJhiGFDTFYSjMF8R15AYEwB5udOxOh51UqH35xGryul12xQeUHDU/pubhtml" 
+      width="100%" 
+      height="500" 
+      frameborder="0"
+      style="border: 1px solid #ccc; border-radius: 8px;">
+    </iframe>
+    <!-- Add more job-posting divs here manually -->
+  </section>
+
+  <section id="agenda">
+    <h2>Agenda</h2>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=ae7767f3bc7d460af9f4e9745b8d616b3e0c9ba0c72ebe652f1fe54ea7431ec8%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>President:</strong> <a href="mailto:jose.irizarry24@upr.edu">jose.irizarry24@upr.edu</a></p>
+    <p><strong>Chapter Contact Info:</strong> <a href="mailto:colorstackuprm@gmail.com">colorstackuprm@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/ColorStackUPRM" target="_blank">@ColorStackUPRM</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/company/colorstack-uprm" target="_blank">ColorStack UPRM</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ColorStack UPRM Chapter. All rights reserved.</p>
+  </footer>
+</body>
+</html>
